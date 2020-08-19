@@ -27,3 +27,25 @@ Python's test repository
   
 + 変数.index(引数)
   引数に該当するインデックス値を取得。remoceと同様に最初に該当したインデックス値を取得
+
+### ディクショナリ
+keyとvalueのセット
+{}で要素を囲む
++ 変数.get(第一引数,第二引数)
+	引数でkeyを指定し、要素を取得。keyがない場合、noneと表示
+	第二引数を入れた場合、noneの表示を変更できる
++ 変数[key] = "要素"
+	keyを指定し、要素の追加を行う
+
++ del 変数[key]
+	引数に削除するkeyを指定
+
++ 変数.keys() もしくは 変数.values()
+	keyもしくはvalueを取得
+
++ for key, value in 変数.items(): print(key,value)
+	keyとvalueを同時取得
+
++ key in 変数
+	指定したkeyを取得しているかを確認(T/F)
+

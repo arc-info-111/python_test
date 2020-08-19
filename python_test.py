@@ -36,7 +36,7 @@ print(test_tuple[2])
 
 """
 ##  リスト
-
+"""
 test_list_1 = ["python", "-", "izm", ".", "com"]# タプルと異なり[]で囲む
 print(test_list_1)
 
@@ -100,3 +100,68 @@ print(test_list_5)
 ### リスト　要素のインデックスを取得
 print(test_list_1)
 print(test_list_1.index("python"))#指定の引数に該当するインデックス値を取得。removeと同じく最初に見つかったインデックス値のみ取得
+
+
+"""
+## ディクショナリ
+test_dict_1 = {"YEAR":"2020", "MONTH":"1", "DAY":"20"}# {}で要素を宣言.要素をkey:valueで宣言
+print(test_dict_1)
+
+print("===============================")
+
+for i in test_dict_1:
+	print(i)
+	print(test_dict_1[i])
+	print("==================================")
+
+## ディクショナリ　valueの取得
+print(test_dict_1)
+
+print("==================================")
+
+print(test_dict_1.get("YEAR"))
+print(test_dict_1.get("YEARS"))# ディクショナリ内に対応するkeyがなくともerrorにならない
+
+print("====================================")
+
+print(test_dict_1.get("YEAR","NOT FOUND"))# 台に引数に該当するkeyが存在しない場合のデフォルト値を設定
+print(test_dict_1.get("YEARS", "NOT FOUND"))
+
+## ディクショナリ　要素の追加
+
+test_dict_1 = {}
+
+print(test_dict_1)
+
+print("================================")
+test_dict_1["YEAR"] = "2020"
+test_dict_1["MONTH"] = "1"
+test_dict_1["DAY"] = "20"
+
+print(test_dict_1)
+
+## ディクショナリ　要素の削除
+test_dict_1 = {"YEAR":"2020", "MONTH":"1", "DAY":"20"}
+print(test_dict_1)
+
+print("=================================")
+del test_dict_1["DAY"] #引数に削除するkeyを選択
+print(test_dict_1)
+
+## ディクショナリ　keyやvalueだけを取得する
+print(test_dict_1)
+
+print("==================================")
+
+print(test_dict_1.keys())
+print(test_dict_1.values())
+
+## ディクショナリ　keyとvalueを同時に取得する
+for key, value in test_dict_1.items():
+	print(key, value)
+
+## ディクショナリ　keyを保持しているかを確認
+print("==================================")
+print("YEAR" in test_dict_1)
+print("YEARS" in test_dict_1)
+

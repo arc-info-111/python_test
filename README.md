@@ -2,5 +2,5 @@
 Python's test repository
 
 # progress
-[*] 文字列
-[ ] 配列
+- [ ] 文字列
+- [ ] 配列

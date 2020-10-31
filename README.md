@@ -10,7 +10,7 @@ https://www.python-izm.com/
 
 - [x] 文字列
 
-- [ ] 数値
+- [x] 数値
 
 - [ ] 日付・時間
 

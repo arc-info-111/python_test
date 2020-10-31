@@ -8,7 +8,7 @@ https://www.python-izm.com/
 
 # 基礎編
 
-- [ ] 文字列
+- [x] 文字列
 
 - [ ] 数値
 

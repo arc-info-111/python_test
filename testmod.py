@@ -6,3 +6,6 @@ class TestClass:
     def test_method(self, val):
         print("call test_method")
         print(val)
+
+    
+

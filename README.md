@@ -34,7 +34,7 @@ Python's test repository
 
 - [x] エスケープシーケンス
 
-- [ ] パスの結合・連結
+- [x] パスの結合・連結
 
 - [ ] if文
 

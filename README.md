@@ -50,11 +50,8 @@ Python's test repository
 
 - [x] print
 
-- [ ] 例外処理
-
-  
-
-- [ ] 
+- [x] 例外処理
+ 
 
 ### タプル
 

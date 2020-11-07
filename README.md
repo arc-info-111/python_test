@@ -36,7 +36,7 @@ Python's test repository
 
 - [x] パスの結合・連結
 
-- [ ] if文
+- [x] if文
 
 - [ ] for文
 

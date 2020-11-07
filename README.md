@@ -42,11 +42,11 @@ Python's test repository
 
 - [x] while文
 
-- [ ] break
+- [x] break
 
-- [ ] continue
+- [x] continue
 
-- [ ] rangeとxrange
+- [x] rangeとxrange
 
 - [ ] print
 

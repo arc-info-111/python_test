@@ -38,7 +38,7 @@ Python's test repository
 
 - [x] if文
 
-- [ ] for文
+- [x] for文
 
 - [ ] while文
 

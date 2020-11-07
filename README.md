@@ -48,7 +48,7 @@ Python's test repository
 
 - [x] rangeとxrange
 
-- [ ] print
+- [x] print
 
 - [ ] 例外処理
 

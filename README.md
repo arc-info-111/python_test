@@ -40,7 +40,7 @@ Python's test repository
 
 - [x] for文
 
-- [ ] while文
+- [x] while文
 
 - [ ] break
 

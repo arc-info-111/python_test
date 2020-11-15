@@ -157,3 +157,31 @@ keyとvalueのセット
 - [ ] マルチスレッド
 - [ ] XML-RPC
 
+## クラス作成
+
+classと記述し、後にクラス名が続く。
+
+```python
+class TestClass:
+	
+	def __init__(self, code, name):
+		self.code = code
+		self.name = name
+		
+classes = []
+classes.append(TestClass(1, "テスト1"))
+classes.append(TestClass(2, "テスト2"))
+
+for test_cls in classes:
+	print("====== Class ====")
+	print("code -->" + str(test_cls.code))
+	print("name -->" + test_cls.name)
+```
+
+3行目にある__init__というメソッドは、クラスの初期化時に必ず実行されるメソッドである。
+
+クラスを利用する上で前準備のような処理を記述することが多い。また__init__メソッドの第一引数にselfがあるが、これはクラスのインスタンス自身を表すものでself.xxといった形で自身が保有する情報へアクセスすることができる。（省略できない）
+
+4行目と5行目にはcodeとnameの2つのインスタンス変数を__init__メソッドの引数から自身のインスタンス(self.xxx)へ引き渡している。これによりTestClassインスタンス自身からはself.codeやself.nameでアクセスすることができ、クラスを作成した側からはインスタンス名.codeやインスタンス名.nameでアクセスすることができるようになる。
+
+9行目、10行目でクラスのインスタンス化を行っている。クラス定義から2つのインスタンスを作成し、それぞれ別のcodeとnameを__init__メソッドを通して情報を保持させる。これによりインスタンスごとに異なる情報を設定することができるようになる。

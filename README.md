@@ -301,6 +301,76 @@ class Point:
     self.y = y
 ```
 
+以上に記述した新しいPointクラスでインスタンスpoint1とpoint2を作成する。
+
+```python
+point1 = Point(1.0,1.0)
+point2 = Point()
+print(f"point1: ({point1.x}, {point1.y})")
+print(f"point2: ({point2.x}, {point2.y})")
+```
+
+ここではpoint1インスタンス生成ではPoint(1.0,1.0)としているので、その属性であるx,yは1.0で初期化される。一方point2インスタンス生成では引数を省略しているので、その属性であるx,yは共に0.0で初期化される。
+
+### インスタンスメソッド
+
+最後に以下の2つの処理を行うメソッドを定義する。
+
++ 原点からの距離を調べる
++ 他の座標との距離を調べる
+
+二つの座標の距離は次の式で求められる。
+
+$$
+\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
+$$
+
+よって以下のコードによってインスタンスメソッドは定義できる。
+
+```python
+from math import sqrt
+
+class Point:
+  def __init__(self,x=0.0,y=0.0):
+    self.x = x
+    self.y = y
+  def difference(self, point=None):
+    if not point:
+      point = Point() #原点を表すPointクラスインスタンスを生成
+     return sqrt((self.x - point.x)**2 + (self.y - point.y)**2)
+```
+
+__init__と同様に第一パラメータはselfになる。point1.difference(何かの値)のようにして、メソッドを呼び出した時には、selfにはpoint1オブジェクトが代入される。
+
+第二パラメータにはPointクラスのインスタンスを渡すが、そのデフォルト引数値に「None」が指定されている、よって、differenceメソッドで引数を指定しなかった時には、パラメータpointの値はNoneになる。
+
+ここでパラメータpointがNone（False）かどうかをif文で調べ、そうである場合原点を表すPointクラスオブジェクトを生成している。これによって、原点からの距離を導出することができる。
+
+最終的なコードを以下に示す。
+
+```python
+from math import sqrt
+
+class Point:
+  def __init__(self, x=0.0, y=0.0):
+    self.x = x
+    self.y = y
+  def difference(self, point=None): 
+    if not point:
+      point = Point()
+    return sqrt((self.x - point.x)**2 + (self.y -point.y)**2)
+    
+point1 = Point(1.0,1.0)
+point2 = Point()
+point3 = Point(5,4)
+
+print(point1.difference(point2))
+print(point1.difference())
+print(pint3.difference(point1))
+```
+
+
+
 # 参考サイト
 
 [クラスの基礎知識](https://www.atmarkit.co.jp/ait/articles/1907/26/news020.html)

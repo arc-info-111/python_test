@@ -369,6 +369,8 @@ print(point1.difference())
 print(pint3.difference(point1))
 ```
 
+## ジェネレータ(yeild)
+
 
 
 # 参考サイト
